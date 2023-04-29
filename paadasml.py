@@ -71,6 +71,8 @@ while True:
     answer = answer.split()[1]
     product = number * times
 
+    number_transcriptions = []
+
     if len(transcription) >= product:
         number_transcriptions = transcription[product]
 
