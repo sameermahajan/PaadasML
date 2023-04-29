@@ -62,7 +62,8 @@ while True:
 
         try:
             answer = r.recognize_google(audio)
-            print("You have said: " + answer + " 2nd part: " + answer.split()[1] + "\n")
+            print("You have said: " + answer)
+            print("2nd part: " + answer.split()[1])
         except Exception as e:
             print("Error :  " + str(e))
             continue
@@ -74,7 +75,7 @@ while True:
     number_transcriptions = []
 
     if len(transcription) >= product:
-        number_transcriptions = transcription[product]
+        number_transcriptions = transcription[product - 1]
 
     is_correct = False
 
