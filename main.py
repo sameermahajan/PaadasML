@@ -2,7 +2,6 @@ import kivy
 from kivy.app import App
 from kivy.core.audio import SoundLoader
 import random
-from playsound import playsound
 from kivy.uix.textinput import TextInput
 import time
 import speech_recognition as sr
