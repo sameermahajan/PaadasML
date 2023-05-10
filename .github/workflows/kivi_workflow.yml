@@ -11,6 +11,9 @@ jobs:
      steps:
        - name: Checkout
          uses: actions/checkout@v2
+         
+       - name: Install PyAudio
+         run: sudo apt install python3-pyaudio
 
        - name: Build with Buildozer
          uses: ArtemSBulgakov/buildozer-action@v1
