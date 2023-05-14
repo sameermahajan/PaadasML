@@ -12,9 +12,6 @@ jobs:
        - name: Checkout
          uses: actions/checkout@v2
          
-       - name: Install PortAudio development libraries
-         run: sudo apt-get install portaudio19-dev
-         
        - name: Install gcc-multilib
          run: sudo apt-get install gcc-multilib
 
